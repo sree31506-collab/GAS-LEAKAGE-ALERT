@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gas Leakage Alert System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🔥 Gas Leakage Alert System</h1>
+        <p class="subtitle">
+            JavaScript-based Gas Sensor Simulation
+        </p>
+
+        <div class="sensor-card">
+
+            <h2>Gas Sensor</h2>
+
+            <div class="gas-value">
+                <span id="gasValue">0</span>
+                <span> ppm</span>
+            </div>
+
+            <div class="meter">
+                <div id="meterFill"></div>
+            </div>
+
+            <p id="status" class="safe">SYSTEM SAFE</p>
+
+            <div class="indicator">
+                <div id="led"></div>
+                <span id="ledText">Normal</span>
+            </div>
+
+            <div id="alarm" class="alarm">
+                🔔 ALARM OFF
+            </div>
+
+        </div>
+
+        <div class="controls">
+
+            <h2>Simulation Control</h2>
+
+            <label for="gasInput">
+                Enter Gas Concentration (ppm):
+            </label>
+
+            <input
+                type="number"
+                id="gasInput"
+                min="0"
+                max="1000"
+                value="100"
+            >
+
+            <button onclick="simulateGas()">
+                Simulate Gas Level
+            </button>
+
+            <button onclick="generateRandomGas()">
+                Generate Random Level
+            </button>
+
+        </div>
+
+        <div class="thresholds">
+
+            <h2>Threshold Levels</h2>
+
+            <p>🟢 Safe: 0 - 399 ppm</p>
+            <p>🟡 Warning: 400 - 599 ppm</p>
+            <p>🔴 Danger: 600 - 1000 ppm</p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
