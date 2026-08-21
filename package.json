@@ -1,0 +1,17 @@
+{
+  "name": "gas-leakage-alert",
+  "version": "1.0.0",
+  "description": "JavaScript simulation of a gas leakage alert system",
+  "main": "testbench.js",
+  "scripts": {
+    "test": "node testbench.js"
+  },
+  "keywords": [
+    "gas-leakage",
+    "javascript",
+    "simulation",
+    "alert-system",
+    "testbench"
+  ],
+  "license": "MIT"
+}
